@@ -70,7 +70,7 @@ public class FamilyTree
             // the nodes of a tree is like traversing a linked list. If that isn’t clear,
             // draw a tree, mark any leaf node, and then mark its ancestors in order from
             // recent to ancient. Expect a question about this on the final exam.
-            TreeNode curr = this.parent;
+            TreeNode curr = parent;
             while (curr != null) {
             	ancestors.add(curr);
             	curr = curr.parent;
@@ -205,7 +205,7 @@ public class FamilyTree
 		try
 		{
 			FamilyTree tree = new FamilyTree();
-			System.out.println("Tree:\n" + tree + "\n**************\n");
+			System.out.println("Tree:\n" + tree + "\nx**************\n");
 			TreeNode ancestor = tree.getMostRecentCommonAncestor("Bilbo", "Frodo");
 			System.out.println("Most recent common ancestor of Bilbo and Frodo is " + ancestor.getName());
 		}
